@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог питомцев</title>
+    <link rel="stylesheet" href="content/css/catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <iframe src="navigation.html" class="nav-frame"></iframe>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Питомец недели</span>
+                <h1 class="hero-title">Познакомьтесь с <span class="highlight">Марли</span></h1>
+                <p class="hero-description">
+                    Невероятно ласковый золотистый ретривер, который обожает долгие прогулки в парке и обнимашки. Марли станет верным другом для большой семьи.
+                </p>
+                <div class="hero-buttons">
+                    <button class="hero-btn">Узнать историю</button>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        </svg>
+                    </a>
+                    <a href="#" class="btn btn-outline">Смотреть видео</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-label">ВОЗРАСТ</span>
+                        <span class="stat-value">2.5 года</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">ЗДОРОВЬЕ</span>
+                        <span class="stat-value">Отличное</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">ХАРАКТЕР</span>
+                        <span class="stat-value">Добрый</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1612536057832-2ff7ead58194?w=500&h=500&fit=crop" alt="Марли - корги">
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="catalog-container">
+            <aside class="sidebar">
+                <div class="filters-header">
+                    <h3 class="filters-title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
+                        </svg>
+                        Фильтры
+                    </h3>
+                    <a href="#" class="filters-reset">Сбросить</a>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header">
+                        <span>Тип животного</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div class="filter-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Собаки</span>
+                            <span class="count">42</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Кошки</span>
+                            <span class="count">38</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Птицы</span>
+                            <span class="count">12</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Грызуны</span>
+                            <span class="count">8</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header">
+                        <span>Возраст</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div class="filter-options">
+                        <div class="range-slider">
+                            <input type="range" min="0" max="15" value="15" class="slider">
+                            <div class="range-labels">
+                                <span>0 лет</span>
+                                <span>До 15 лет</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header">
+                        <span>Пол</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-header">
+                        <span>Размер</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <div class="filter-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Маленький</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Средний</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span class="checkbox-custom"></span>
+                            <span>Крупный</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="help-box">
+                    <h4>Нужна помощь в выборе?</h4>
+                    <p>Наши эксперты помогут найти идеального друга под ваш образ жизни.</p>
+                    <a href="#" class="btn btn-primary btn-small">Консультация</a>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="results-header">
+                    <div class="results-info">
+                        <span>Найдено питомцев: <strong>124</strong></span>
+                        <span>Показано: <strong>1-9</strong></span>
+                    </div>
+                    <div class="results-actions">
+                        <div class="search-catalog">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            <input type="text" placeholder="Искать по имени...">
+                        </div>
+                        <div class="sort-dropdown">
+                            <span>Сортировка</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pets-grid">
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=300&h=300&fit=crop" alt="Барон">
+                            <span class="card-badge badge-star">Звезда</span>
+                            <button class="favorite-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Барон</h3>
+                                <span class="pet-age">2 года</span>
+                            </div>
+                            <p class="pet-breed">Золотистый ретривер</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=300&h=300&fit=crop" alt="Луна">
+                            <span class="card-badge badge-new">Новинка</span>
+                            <button class="favorite-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Луна</h3>
+                                <span class="pet-age">7 месяцев</span>
+                            </div>
+                            <p class="pet-breed">Британская короткошерстная</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300&h=300&fit=crop" alt="Чарли">
+                            <button class="favorite-btn active">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Чарли</h3>
+                                <span class="pet-age">1 год</span>
+                            </div>
+                            <p class="pet-breed">Джек-рассел терьер</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=300&fit=crop" alt="Оливия">
+                            <button class="favorite-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Оливия</h3>
+                                <span class="pet-age">3 года</span>
+                            </div>
+                            <p class="pet-breed">Сиамская кошка</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=300&h=300&fit=crop" alt="Макс">
+                            <button class="favorite-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Макс</h3>
+                                <span class="pet-age">4 года</span>
+                            </div>
+                            <p class="pet-breed">Немецкая овчарка</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+
+                    <div class="pet-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=300&h=300&fit=crop" alt="Снежок">
+                            <button class="favorite-btn active">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <div class="card-header">
+                                <h3 class="pet-name">Снежок</h3>
+                                <span class="pet-age">3 месяца</span>
+                            </div>
+                            <p class="pet-breed">Ангорский кролик</p>
+                            <p class="pet-description">Дружелюбный и активный питомец, который ищет заботливую семью.</p>
+                            <a href="#" class="btn btn-primary btn-full">Познакомиться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">14</button>
+                    <button class="page-btn page-next">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m9 18 6-6-6-6"/>
+                        </svg>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="petModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <div class="modal-content">
+                <!-- Left side - Form -->
+                <div class="modal-form-section">
+                    <h2 class="modal-title">Заявка на знакомство</h2>
+                    <p class="modal-subtitle">Пожалуйста, заполните анкету, и наш специалист свяжется с вами в ближайшее время.</p>
+                    
+                    <form class="application-form" id="applicationForm">
+                        <div class="form-group">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" class="form-input" placeholder="Александр Иванов" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Телефон</label>
+                                <input type="tel" class="form-input" placeholder="+7 (___) __-__-__" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="example@mail.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Есть ли у вас опыт содержания собак?</label>
+                            <textarea class="form-textarea" placeholder="Расскажите немного о вашем опыте..." rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-checkboxes">
+                            <label class="form-checkbox">
+                                <input type="checkbox" required>
+                                <span class="checkbox-mark"></span>
+                                <span class="checkbox-text">Я согласен на обработку персональных данных и принимаю условия политики конфиденциальности.</span>
+                            </label>
+                            <label class="form-checkbox">
+                                <input type="checkbox" required>
+                                <span class="checkbox-mark"></span>
+                                <span class="checkbox-text">Я понимаю ответственность за содержание животного и готов обеспечить ему достойный уход.</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить заявку</button>
+                    </form>
+                </div>
+                
+                <!-- Right side - Pet Card -->
+                <div class="modal-pet-section">
+                    <div class="modal-pet-card">
+                        <div class="modal-pet-image">
+                            <img id="modalPetImage" src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=400&h=400&fit=crop" alt="Питомец">
+                            <span class="modal-badge" id="modalBadge">Звезда</span>
+                            <button class="modal-favorite-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="modal-pet-info">
+                            <div class="modal-pet-header">
+                                <h3 class="modal-pet-name" id="modalPetName">Барон</h3>
+                                <span class="modal-pet-age" id="modalPetAge">2 года</span>
+                            </div>
+                            <p class="modal-pet-breed" id="modalPetBreed">Золотистый ретривер</p>
+                            
+                            <div class="modal-pet-tags">
+                                <span class="pet-tag">Привит</span>
+                                <span class="pet-tag">Чипирован</span>
+                            </div>
+                            
+                            <p class="modal-pet-description" id="modalPetDescription">«Дружелюбный и активный питомец, который ищет заботливую семью. Очень любит играть в мяч и долгие прогулки в парке. Барон отлично ладит с детьми и другими собаками.»</p>
+                            
+                            <div class="modal-pet-stats">
+                                <div class="modal-stat">
+                                    <span class="modal-stat-label">ЗДОРОВЬЕ</span>
+                                    <span class="modal-stat-value">Отличное</span>
+                                </div>
+                                <div class="modal-stat">
+                                    <span class="modal-stat-label">ХАРАКТЕР</span>
+                                    <span class="modal-stat-value">Добрый, игривый</span>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-curator">
+                                <div class="curator-avatar">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop" alt="Куратор">
+                                </div>
+                                <div class="curator-info">
+                                    <span class="curator-label">Куратор питомца</span>
+                                    <span class="curator-name">Анна Сергеева</span>
+                                </div>
+                                <div class="curator-check">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo logo-light">
+                        <div class="logo-icon">
+                            <img src = content/foto/лого.png width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            </svg>
+                        </div>
+                        <span class="logo-text">Happy Pet</span>
+                    </div>
+                    <p class="footer-description">
+                        Мы создаем комфортные условия для жизни ваших питомцев. Профессиональный уход и забота в каждом создании.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 class="footer-heading">Навигация</h4>
+                    <ul class="footer-list">
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Усыновление</a></li>
+                        <li><a href="#">Гарантия здоровья</a></li>
+                        <li><a href="#">Истории успеха</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Контакты</h4>
+                    <ul class="footer-list">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            +7 (800) 123-45-67
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                            hello@happypet.ru
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            г. Магнитогорск, ул. Звериная, 36 
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 class="footer-heading">Рассылка</h4>
+                    <p class="footer-newsletter-text">Получайте новости о новых питомцах и советы по уходу.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Введите email" class="newsletter-input">
+                        <button class="newsletter-btn">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Happy Pet. Все права защищены.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+    <script>
+        // Modal functionality
+        const modal = document.getElementById('petModal');
+        const closeBtn = document.getElementById('closeModal');
+        const petCards = document.querySelectorAll('.pet-card');
+        
+        // Open modal when clicking on pet card or "Познакомиться" button
+        petCards.forEach(card => {
+            const meetBtn = card.querySelector('.btn-primary');
+            
+            meetBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Get pet data from card
+                const petName = card.querySelector('.pet-name').textContent;
+                const petAge = card.querySelector('.pet-age').textContent;
+                const petBreed = card.querySelector('.pet-breed').textContent;
+                const petDescription = card.querySelector('.pet-description').textContent;
+                const petImage = card.querySelector('.card-image img').src.replace('w=300&h=300', 'w=400&h=400');
+                const badge = card.querySelector('.card-badge');
+                
+                // Update modal with pet data
+                document.getElementById('modalPetName').textContent = petName;
+                document.getElementById('modalPetAge').textContent = petAge;
+                document.getElementById('modalPetBreed').textContent = petBreed;
+                document.getElementById('modalPetDescription').textContent = '«' + petDescription + '»';
+                document.getElementById('modalPetImage').src = petImage;
+                
+                // Update badge
+                const modalBadge = document.getElementById('modalBadge');
+                if (badge) {
+                    modalBadge.textContent = badge.textContent;
+                    modalBadge.style.display = 'block';
+                    if (badge.classList.contains('badge-new')) {
+                        modalBadge.className = 'modal-badge badge-new';
+                    } else {
+                        modalBadge.className = 'modal-badge badge-star';
+                    }
+                } else {
+                    modalBadge.style.display = 'none';
+                }
+                
+                // Show modal
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        // Close modal
+        closeBtn.addEventListener('click', function() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        // Close on overlay click
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Form submission
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
